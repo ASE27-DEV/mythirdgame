@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.score {
+    position: fixed;
+    color: white;
+    margin-left: 1%;
+    margin-top: 1%;
+    user-select: none;
+}
+
+.container_gameUi {
+    position: fixed;
+    display: flex;
+    inset: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameUi {
+    background-color: white;
+    max-width: 50vw;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+.scorePoints {
+    font-size: 50px;
+    font: bolder;
+}
+
+.scoreTxt {
+    font-size: large;
+    color: grey;
+    margin-bottom: 1%;
+}
+
+.btn_start {
+    background-color: rgba(49, 49, 253, 0.856);
+    width: 70%;
+    padding: 10px;
+    font-size: x-large;
+    color: white;
+    border-radius: 50px;
+}
