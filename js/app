@@ -7,7 +7,7 @@ canvas.height = innerHeight; // J'impose à mon canvas de faire la hauteur de ma
 
 // Je pointe tout les élements HTML du même nom pour faire la liaison
 const scoreElement = document.querySelector('#scoreElement')
-const btn_start_game = document.querySelector('#btn_start_game')
+// const btn_start_game = document.querySelector('#btn_start_game')
 const modal_gameUi = document.querySelector('#modal_gameUi')
 const scorePoints = document.querySelector('#scorePoints')
 const bestScore = document.querySelector('#bestScore') 
@@ -279,11 +279,18 @@ window.addEventListener('click', (event) => { // event ici fait ref à l'évenem
     )
 });
 
-btn_start_game.addEventListener('click', () => {
-        initialisation()
-        animate()
-        spawnEnnemis()
-        modal_gameUi.style.display = 'none'
-});
+function btn_start_game() {
+    initialisation()
+    animate()
+    spawnEnnemis()
+    modal_gameUi.style.display = 'none'
+};
+
+// btn_start_game.addEventListener('click', () => {
+//         initialisation()
+//         animate()
+//         spawnEnnemis()
+//         modal_gameUi.style.display = 'none'
+// });
 
 
